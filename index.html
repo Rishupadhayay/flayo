@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+    .header{
+
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .list{
+      margin-right: 30px;
+      list-style: none;
+    }
+    .li1{
+      display: inline;
+      padding: 10px;
+    }
+    .secondpart{
+      width: 100%;
+      height: 100vh; /* Full viewport height */
+      flex-wrap: wrap;
+      overflow: auto;
+      background-color: #f9f9f9;
+      /* width: 100vw; */
+      /* height: 400px; */
+      display: flex;
+      flex-direction: row;
+      align-items:center;
+      justify-content:flex-start;
+    }
+    .content{
+      flex: 1;
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+    }
+    .img11{
+      width: 100%;
+      height: 400px;
+      background: url("./images/illustration-1.svg") no-repeat center center/cover;
+      display: inline-block;
+      /* height: 700px; */
+      flex: 1;
+      /* position: absolute; */
+    }
+    input{
+      max-width: 250px;
+      height: 20px;
+      margin-top: 30px;
+    }
+    .btn1{
+      height: 30px;
+      max-width: 120px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: 20px;
+      background-color: #2F65F9;
+      border: none;
+      color: white;
+    }
+    .img2{
+      width: 100vw; 
+    }
+    .container2{
+      flex-wrap: wrap;
+      overflow: auto;
+      height: 400px;
+      /* width: 100vw; */
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: stretch;
+      justify-content: space-evenly;
+    }
+    .part1{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      /* align-items:center; */
+      justify-content: center;
+    }
+    .part2{
+      flex: 1;
+      display: flex;
+      overflow: auto;
+      background: url("./images/illustration-2.svg")  no-repeat  center center/cover;
+    }
+    .link{
+      /* margin-top: 0px; */
+      color: #658B85;
+      text-decoration: underline;
+     }
+     .link1{
+      /* color: #658B85; */
+      margin-top: 20px;
+      margin-bottom: 20px;
+     }
+     .box{
+      padding: 20px;
+      max-width:300px ;
+      margin-top: 20px;
+      /* border: 2px solid black; */
+      box-shadow: 5px 5px 5px 5px grey;
+     }
+     .boxmain{
+      display: flex;
+
+     }
+     .text{
+      font:900;
+     }
+     .manimg{
+      /* margin-top: 9px; */
+      border-radius: 20px;
+      margin-right: 20px;
+     }
+
+
+
+
+
+     .part3{
+      display: flex;
+      flex-wrap: wrap;
+      overflow: auto;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      background-color: #575989;
+      color: white;
+      padding: 30px;
+      padding-bottom: 40px;
+      margin: 0px;
+    }
+    .part3a{
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .part3b{
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .part3aa{
+      max-width:400px ;
+      max-height: fit-content;
+    }
+
+
+
+
+    .last{
+      flex-wrap: wrap;
+      overflow: auto;
+      background-color:#07043B;
+      display: flex;
+      flex-direction: row;
+      color: white;
+    }
+    .cont1{
+      flex: 1;
+    }
+    .cont2{
+      flex: 1;
+    }
+    .cont3{
+      flex: 1;
+    }
+    .cont4{
+      flex: 1;
+    }
+    ul{
+      list-style: none;
+    }
+    .btn2{
+      background-color: #2F65F9;
+      border: none;
+      color: white;
+      margin-top: 10px;
+      height: 30px;
+    }
+    @media ( max-width: 768px) and (min-width: 30px){
+          .img11{
+            background: url("./images/illustration-1.svg") no-repeat center center/cover;
+            /* padding-top: 800px; */
+            display:flex;
+            /* height: 800px; */
+          }
+          .secondpart{
+          flex-wrap: wrap;
+          overflow: auto;
+          background-color: #f9f9f9;
+          /* width: 100vw; */
+          height: 900px;
+          display: flex;
+          flex-direction: column;
+          align-items:center;
+          flex-direction: column-reverse;
+          justify-content:flex-start;}
+          
+          .container2{
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          overflow: auto;
+          flex-direction: column;
+          height: 900px;
+          /* width: 100vw; */
+          display: flex;
+          /* flex-direction: row-reverse; */
+          align-items: stretch;
+          justify-content: space-evenly;
+        }
+        .last{
+          /* align-items: center; */
+          flex-wrap: wrap;
+          justify-content: center;
+          overflow: auto;
+          background-color:#07043B;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          color: white;
+        }
+        .part3{
+          justify-content: center;
+          display: flex;
+          flex-wrap: wrap;
+          overflow: auto;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          background-color: #575989;
+          color: white;
+          padding: 30px;
+          padding-bottom: 40px;
+          margin: 0px;
+        }
+        .part1{
+          display: flex;
+          align-items: center;
+        }
+        .content{
+          display: flex;
+          align-items: center;
+        }
+
+        
+      }
+    .a{
+      text-decoration: none;
+      color: black;
+    }
+     
+      
+  </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="./images/logo.svg" alt>
+      <ul class="list">
+        <li class="li1"><a href="" class="a">Features</a></li>
+        <li class="li1"><a href="" class="a">Team</a></li>
+        <li class="li1"><a href="" class="a">Sign In</a></li>
+      </ul>
+    </div>
+
+    <div class="secondpart">
+      <div class="content">
+        <h1>All your files in one secure location, accessible anywhere.</h1>
+        Fylo stores your most important files in one secure location.
+        Access them wherever you need, share and collaborate with friends,
+        family, and co-workers.<br>
+        <div>
+          <input type placeholder="Enter your email.."><button  class="btn1">Get Started</button>
+        </div>
+      </div>
+
+      <div class="img11">
+        <!-- <img src="./images/illustration-1.svg" alt class="img1"> -->
+        
+        <!--  -->
+        
+        
+        
+      </div>
+      
+    </div>
+    <div class="img22">
+      <img class="img2" src="./images/bg-curve-desktop.svg" alt>
+    </div>
+    
+    
+    
+    
+    
+    
+    <div class="container2">
+      <div class="part2">
+        <!-- <img src="./images/illustration-2.svg" alt="" class="img3"> -->
+      </div>
+      <div class="part1">
+        <h1>Stay productive, wherever you are</h1>
+        
+        Never let location be an issue when accessing your files. Fylo has you
+        covered for all of your file storage needs.
+        
+        Securely share files and folders with friends, family and colleagues for
+        live collaboration. No email attachments required!
+        
+        <div class="link1"><a href="" class="link">See how Fylo works <img src="./images/icon-arrow.svg" alt=""></a></div>
+        
+        <div class="box">
+          <div><img src="./images/icon-quotes.svg" alt=""></div>
+          Fylo has improved our team productivity by an order of magnitude. Since
+          making the switch our team has become a well-oiled collaboration machine.
+          
+          <div class="boxmain">
+            <div >
+              <img src="./images/avatar-testimonial.jpg" alt="" width="30px" height="30px" class="manimg">
+            </div>
+            <div class="name">
+              <div class="text"><b>Kyle Burton</b></div>
+              Founder & CEO, Huddle
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+
+    <div class="part3">
+      <div class="part3a">
+        <div class="part3aa">
+          <h2>Get early access today</h2>
+          It only takes a minute to sign up and our free starter tier is extremely
+          generous.
+          If you have any questions, our support team would be happy to help you.
+        </div>
+      </div>
+      <div class="part3b">
+        <input type="text" placeholder="email@example.com">
+        <button class="btn2">Get Start For Free</button>
+      </div>
+    </div>
+
+    <div class="last">
+      <div class="cont1">
+        <ul>
+          
+          <img src="./images/img1.png" alt width="100px" height="60px">
+          <li><img src="./images/icon-phone.svg" alt="" width="12px"> phone: +1-543-123-4567</li>
+          <li><img src="./images/icon-email.svg" alt="" width="15px"> example@fylo.com</li>
+        </ul>
+        
+      </div>
+
+      <div class="cont2">
+        <ul>
+          <li>About Us</li>
+          <li>Jobs</li>
+          <li>Press</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+
+      <div class="cont3">
+        <ul>
+          <li>Contact Us</li>
+          <li>Terms</li>
+          <li>Privacy</li>
+        </ul>
+      </div>
+      <div class="cont4">
+          <img src="./images/l.png" alt="" >
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+    
+  </body>
+</html>
